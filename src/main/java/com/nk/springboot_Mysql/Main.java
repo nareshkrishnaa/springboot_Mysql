@@ -35,3 +35,8 @@ public class Main implements CommandLineRunner {
 		}
 	}
 }
+/*Notes
+ * Types of injection/ ways for creating beans. Field injection / constructor injection / get bean
+ * component scan annotation @ComponentScan(basePackages = "com.aymar.springdemo.pkg2")
+ * Bean name conflict resolution
+ */
