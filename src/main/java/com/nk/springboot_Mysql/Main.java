@@ -3,6 +3,7 @@ package com.nk.springboot_Mysql;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.List;
 
@@ -15,8 +16,13 @@ public class Main implements CommandLineRunner {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Hi_____________---------");
-		SpringApplication.run(Main.class, args);
+
+
+		ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
+		Dependency3 d3 = context.getBean(Dependency3.class);
+		d3.show();
+
+
 	}
 
 
