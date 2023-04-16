@@ -1,4 +1,4 @@
-package com.nk.springboot_Mysql;
+package com.nk.springboot_Mysql.pk1;
 
 public class Customer {
     private Long id;

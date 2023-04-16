@@ -1,10 +1,11 @@
-package com.nk.springboot_Mysql;
+package com.nk.springboot_Mysql.pk2;
 
-import com.sun.security.jgss.GSSUtil;
+import com.nk.springboot_Mysql.pk1.Dependency2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("bean3")
 public class Dependency3 {
    private Dependency2 d2;
 

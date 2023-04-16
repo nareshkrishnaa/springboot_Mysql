@@ -1,4 +1,4 @@
-package com.nk.springboot_Mysql;
+package com.nk.springboot_Mysql.pk1;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

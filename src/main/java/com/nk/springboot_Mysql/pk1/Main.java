@@ -1,13 +1,16 @@
-package com.nk.springboot_Mysql;
+package com.nk.springboot_Mysql.pk1;
 
+import com.nk.springboot_Mysql.pk2.Dependency3;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.List;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.nk.springboot_Mysql")
 public class Main implements CommandLineRunner {
 	private final CustomerRepository customerRepository;
 
@@ -21,6 +24,9 @@ public class Main implements CommandLineRunner {
 		ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
 		Dependency3 d3 = context.getBean(Dependency3.class);
 		d3.show();
+		System.out.println(context.containsBean("bean3"));
+
+
 
 
 	}
