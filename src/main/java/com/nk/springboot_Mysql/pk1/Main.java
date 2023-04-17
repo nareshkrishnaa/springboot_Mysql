@@ -25,6 +25,10 @@ public class Main implements CommandLineRunner {
 		Dependency3 d3 = context.getBean(Dependency3.class);
 		d3.show();
 		System.out.println(context.containsBean("bean3"));
+		Name nk = context.getBean(Name.class);
+		System.out.println(nk.getName());
+		PizzaController pc = context.getBean(PizzaController.class);
+		System.out.println(pc.getPizza());
 
 
 
